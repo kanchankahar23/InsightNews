@@ -1,30 +1,52 @@
-import React from 'react'
-import image from '../assets/image copy.png'
+import React from "react";
+import logo from "../assets/Logo.png"; // your Insight News logo
 
 const Navbar = () => {
   return (
-    <div className='w-full h-28 bg-zinc-50 flex justify-between items-center px-10 shadow-md'>
+    <header className="w-full border-b">
 
-      <div>
-        <img className='w-44 h-44 object-contain' src={image} alt="Logo" />
+      <div className="w-full flex justify-between items-center px-6 py-2 text-sm text-gray-700">
+        {/* 🔹 LOGO CENTER */}
+        <div className="flex gap-4">
+          <span>December 19, 2025</span>
+          <span className="text-red-600 font-semibold cursor-pointer">
+            e-Paper
+          </span>
+        </div>
+        <div className="w-full flex justify-center items-center ">
+          <img
+            src={logo}
+            alt="Insight News"
+            className="w-72 h-auto object-contain "
+          />
+        </div>
+        <div className="flex gap-6 items-center">
+          <span className="cursor-pointer">LOGIN</span>
+          <button className="bg-red-600 text-white px-4 py-1 rounded text-sm">
+            SUBSCRIBE
+          </button>
+        </div>
       </div>
 
-      {/* Navigation Links */}
-      <nav className='flex items-center gap-8 text-gray-700 font-medium'>
-        <a href="#" className='hover:text-blue-800 font-bold text-xl  transition'>HOME</a>
-        <a href="#" className='hover:text-blue-800 font-bold text-xl  transition'>TECHNOLOGY</a>
-        <a href="#" className='hover:text-blue-800 font-bold text-xl  transition'>SPORTS</a>
-        <a href="#" className='hover:text-blue-800 font-bold text-xl  transition'>BUSINESS</a>
-        <a href="#" className='hover:text-blue-800 font-bold text-xl  transition'>ENTERTAINMENT</a>
-        <a href="#" className='hover:text-blue-800 font-bold text-xl  transition'>HEALTH</a>
+
+
+
+      {/* 🔹 MENU BAR */}
+      <nav className="w-full flex justify-center gap-10 py-3 border-t text-lg font-semibold">
+        <a href="#" className="hover:text-red-600">India</a>
+        <a href="#" className="hover:text-red-600">World</a>
+        <a href="#" className="hover:text-red-600">Movies</a>
+        <a href="#" className="hover:text-red-600">Sport</a>
+        <a href="#" className="hover:text-red-600">Data</a>
+        <a href="#" className="hover:text-red-600">Health</a>
+        <a href="#" className="hover:text-red-600">Opinion</a>
+        <a href="#" className="hover:text-red-600">Science</a>
+        <a href="#" className="hover:text-red-600">Business</a>
+        <a href="#" className="hover:text-red-600">Premium</a>
       </nav>
 
-      {/* Button */}
-      <button className='bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition'>
-        Get Started
-      </button>
-    </div>
-  )
-}
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
