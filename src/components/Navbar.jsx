@@ -6,10 +6,10 @@ const Navbar = () => {
 
   return (
     <header className="w-full border-b">
-      <div className="flex items-center justify-between px-4 py-2">
-        <div className="hidden md:flex gap-4 text-sm text-gray-700">
-          <span>Dec 19, 2025</span>
-          <span className="text-red-600 font-semibold cursor-pointer">
+      <div className="flex items-center justify-between px-4 py-1">
+        <div className="hidden md:flex gap-4  text-sm text-gray-700">
+          <span className="font-bold">Dec 19, 2025</span>
+          <span className="text-red-600 font-bold cursor-pointer">
             e-Paper
           </span>
         </div>
@@ -21,13 +21,12 @@ const Navbar = () => {
           />
         </div>
         <div className="hidden md:flex gap-6 items-center text-sm">
-          <span className="cursor-pointer">LOGIN</span>
-          <button className="bg-red-600 text-white px-4 py-1 rounded">
+          <span className="cursor-pointer font-bold text-gray-700 border-red-700 transition duration-200 hover:border-b-2">LOGIN</span>
+          <button className="bg-red-600 hover:bg-none   hover:bg-transparent hover:text-red-600 border hover:border-red-500
+             transition duration-300  font-bold text-white px-4 py-1 rounded">
             SUBSCRIBE
           </button>
         </div>
-
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-2xl"
           onClick={() => setOpen(!open)}
@@ -35,8 +34,6 @@ const Navbar = () => {
           ☰
         </button>
       </div>
-
-      {/* NAV LINKS */}
       <nav
         className={`${open ? "block" : "hidden"
           } md:flex md:justify-center md:gap-10 border-t md:border-0 px-4 md:px-0`}
