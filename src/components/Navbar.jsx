@@ -1,50 +1,67 @@
-import React from "react";
-import logo from "../assets/Logo.png"; // your Insight News logo
+import React, { useState } from "react";
+import logo from "../assets/Logo.png";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="w-full border-b">
-
-      <div className="w-full flex justify-between items-center px-6 py-2 text-sm text-gray-700">
-        {/* 🔹 LOGO CENTER */}
-        <div className="flex gap-4">
-          <span>December 19, 2025</span>
+      <div className="flex items-center justify-between px-4 py-2">
+        <div className="hidden md:flex gap-4 text-sm text-gray-700">
+          <span>Dec 19, 2025</span>
           <span className="text-red-600 font-semibold cursor-pointer">
             e-Paper
           </span>
         </div>
-        <div className="w-full flex justify-center items-center ">
+        <div className="flex-1 flex justify-center">
           <img
             src={logo}
             alt="Insight News"
-            className="w-72 h-auto object-contain "
+            className="w-52 md:w-72 h-auto object-contain"
           />
         </div>
-        <div className="flex gap-6 items-center">
+        <div className="hidden md:flex gap-6 items-center text-sm">
           <span className="cursor-pointer">LOGIN</span>
-          <button className="bg-red-600 text-white px-4 py-1 rounded text-sm">
+          <button className="bg-red-600 text-white px-4 py-1 rounded">
             SUBSCRIBE
           </button>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setOpen(!open)}
+        >
+          ☰
+        </button>
       </div>
 
-
-
-
-      {/* 🔹 MENU BAR */}
-      <nav className="w-full flex justify-center gap-10 py-3 border-t text-lg font-semibold">
-        <a href="#" className="hover:text-red-600">India</a>
-        <a href="#" className="hover:text-red-600">World</a>
-        <a href="#" className="hover:text-red-600">Movies</a>
-        <a href="#" className="hover:text-red-600">Sport</a>
-        <a href="#" className="hover:text-red-600">Data</a>
-        <a href="#" className="hover:text-red-600">Health</a>
-        <a href="#" className="hover:text-red-600">Opinion</a>
-        <a href="#" className="hover:text-red-600">Science</a>
-        <a href="#" className="hover:text-red-600">Business</a>
-        <a href="#" className="hover:text-red-600">Premium</a>
+      {/* NAV LINKS */}
+      <nav
+        className={`${open ? "block" : "hidden"
+          } md:flex md:justify-center md:gap-10 border-t md:border-0 px-4 md:px-0`}
+      >
+        {[
+          "India",
+          "World",
+          "Movies",
+          "Sport",
+          "Data",
+          "Health",
+          "Opinion",
+          "Science",
+          "Business",
+          "Premium",
+        ].map((item) => (
+          <a
+            key={item}
+            href="#"
+            className="block py-2 md:py-3 text-center text-lg font-semibold hover:text-red-600"
+          >
+            {item}
+          </a>
+        ))}
       </nav>
-
     </header>
   );
 };
