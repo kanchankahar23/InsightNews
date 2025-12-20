@@ -11,32 +11,36 @@ const Home = () => {
     { heading: "Polavaram displaced families look to tide over livelihood crisis", name: "Kallol Bhattacherjee" },
     { heading: "A bold step amid an ambitious nuclear energy target", name: "R.B. Grover" }
   ]
+
   const latest = [
-    {
-      heading: "Cyclone Ditwah damage in Sri Lanka | The long path from wreckage to recovery"
-    }
+    { heading: "Cyclone Ditwah damage in Sri Lanka | The long path from wreckage to recovery", name: "Sahana Venugopal" },
+    { heading: "How South Asians became targets of racist hate on Elon Musk’s X", name: "Sahana Venugopal" },
+    { heading: "The significance of a strong defence industrial base", name: "Meera Srinivasan" },
+    { heading: "From the ‘Sincaraz’ takeover to the Sabalenka makeover", name: "Kallol Bhattacherjee" },
+    { heading: "Sharif Osman Hadi: Man of the streets", name: "N. Sudarshan" },
   ]
+
   return (
-    <div className="flex justify-evenly mt-6 gap-10 ml-5 ">
+    <div className="flex justify-between mt-6 gap-8 px-5">
+
+      {/* Premium */}
       <div className="hidden md:flex flex-col w-1/5">
         <h1 className="text-red-600 font-bold mb-3">Premium</h1>
 
         {Premium.map((item, index) => (
           <div key={index} className="mb-4">
-            <h2 className="text-sm font-semibold mb-1">
-              {item.heading}
-            </h2>
-            <p className="text-xs text-gray-500">
-              {item.name}
-            </p>
+            <h2 className="text-sm font-semibold">{item.heading}</h2>
+            <p className="text-xs text-gray-500">{item.name}</p>
           </div>
         ))}
       </div>
-      <div className="hidden md:block border-l border-gray-500"></div>
-      <div className="w-full max-w-md p-2 md:max-w-3/5">
-        <h1 className="text-red-600 font-bold mb-1">
-          Tamil Nadu
-        </h1>
+
+      {/* Divider */}
+      <div className="hidden md:block w-px bg-gray-300"></div>
+
+      {/* Main News */}
+      <div className="w-full md:w-3/5">
+        <h1 className="text-red-600 font-bold mb-1">Tamil Nadu</h1>
 
         <h2 className="text-2xl font-bold mb-2">
           Over 97 lakh voters deleted from T.N. draft electoral roll after SIR
@@ -46,25 +50,24 @@ const Home = () => {
           Total number of voters removed after the SIR exercise is 97,37,831; as many as 14,25,018 names have been deleted in Chennai
         </p>
 
-        <img
-          src={image}
-          alt="News"
-          className="w-full rounded-lg"
-        />
+        <img src={image} alt="News" className="w-full rounded-lg" />
       </div>
 
-      <div className="hidden md:block border-l border-gray-500"></div>
+      {/* Divider */}
+      <div className="hidden md:block w-px bg-gray-300"></div>
+
+      {/* Latest News */}
       <div className="hidden md:flex flex-col w-1/5">
-        <h1 className="text-red-600 text-3xl font-bold mb-3">Latest News</h1>
-        <div className="hidden md:block border-l border-gray-500"></div>
+        <h1 className="text-red-600 font-bold mb-3">Latest News</h1>
 
-        <h2 className="text-sm font-semibold mb-1">
-          A bold step amid an ambitious nuclear energy target
-        </h2>
-        <p className="text-xs text-gray-500">
-          R.B. Grover
-        </p>
+        {latest.map((item, index) => (
+          <div key={index} className="mb-4">
+            <h2 className="text-sm font-semibold">{item.heading}</h2>
+            <p className="text-xs text-gray-500">{item.name}</p>
+          </div>
+        ))}
       </div>
+
     </div>
   )
 }
