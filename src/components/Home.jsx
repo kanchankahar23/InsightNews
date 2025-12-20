@@ -14,8 +14,6 @@ const Home = () => {
 
   return (
     <div className="flex justify-evenly mt-6 gap-10 ml-5 ">
-
-      {/* LEFT PREMIUM */}
       <div className="hidden md:flex flex-col w-1/5">
         <h1 className="text-red-600 font-bold mb-3">Premium</h1>
 
@@ -31,8 +29,7 @@ const Home = () => {
         ))}
       </div>
 
-      {/* CENTER MAIN NEWS */}
-      <div className="w-full max-w-md p-4 md:max-w-3/5">
+      <div className="w-full max-w-md p-2 md:max-w-3/5">
         <h1 className="text-red-600 font-bold mb-1">
           Tamil Nadu
         </h1>
@@ -51,8 +48,6 @@ const Home = () => {
           className="w-full rounded-lg"
         />
       </div>
-
-      {/* RIGHT PREMIUM */}
       <div className="hidden md:flex flex-col w-1/5">
         <h1 className="text-red-600 font-bold mb-3">Premium</h1>
         <h2 className="text-sm font-semibold mb-1">
@@ -62,7 +57,6 @@ const Home = () => {
           R.B. Grover
         </p>
       </div>
-
     </div>
   )
 }
