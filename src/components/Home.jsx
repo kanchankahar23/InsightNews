@@ -11,7 +11,11 @@ const Home = () => {
     { heading: "Polavaram displaced families look to tide over livelihood crisis", name: "Kallol Bhattacherjee" },
     { heading: "A bold step amid an ambitious nuclear energy target", name: "R.B. Grover" }
   ]
-
+  const latest = [
+    {
+      heading: "Cyclone Ditwah damage in Sri Lanka | The long path from wreckage to recovery"
+    }
+  ]
   return (
     <div className="flex justify-evenly mt-6 gap-10 ml-5 ">
       <div className="hidden md:flex flex-col w-1/5">
@@ -28,7 +32,7 @@ const Home = () => {
           </div>
         ))}
       </div>
-
+      <div className="hidden md:block border-l border-gray-500"></div>
       <div className="w-full max-w-md p-2 md:max-w-3/5">
         <h1 className="text-red-600 font-bold mb-1">
           Tamil Nadu
@@ -48,8 +52,12 @@ const Home = () => {
           className="w-full rounded-lg"
         />
       </div>
+
+      <div className="hidden md:block border-l border-gray-500"></div>
       <div className="hidden md:flex flex-col w-1/5">
-        <h1 className="text-red-600 font-bold mb-3">Premium</h1>
+        <h1 className="text-red-600 text-3xl font-bold mb-3">Latest News</h1>
+        <div className="hidden md:block border-l border-gray-500"></div>
+
         <h2 className="text-sm font-semibold mb-1">
           A bold step amid an ambitious nuclear energy target
         </h2>
