@@ -1,100 +1,97 @@
 import React from "react";
 
-const Middle = () => {
+const Home = () => {
     return (
-        <section className="w-full px-10 py-8 ">
+        <div className="w-full bg-white">
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <div className="lg:col-span-3">
-                    <h3 className="text-red-600 font-semibold mb-4">Latest</h3>
-                    <ul className="space-y-4 text-sm">
-                        <li>
-                            <p className="font-semibold">
-                                A bold step amid an ambitious nuclear energy target
-                            </p>
-                            <span className="text-gray-500 text-xs">R.B. Grover</span>
-                        </li>
-                        <li>
-                            <p className="font-semibold">
-                                A bold step amid an ambitious nuclear energy target
-                            </p>
-                            <span className="text-gray-500 text-xs">R.B. Grover</span>
-                        </li>
-                        <li>
-                            <p className="font-semibold">
-                                A bold step amid an ambitious nuclear energy target
-                            </p>
-                            <span className="text-gray-500 text-xs">R.B. Grover</span>
-                        </li>
+            <h1 className="text-4xl font-bold text-center mt-10 mb-8 text-red-600">The Top Headlines</h1>
+            {/* Main Section */}
+            
 
-                        <li>
-                            <p className="font-semibold">
-                                A bold step amid an ambitious nuclear energy target
-                            </p>
-                            <span className="text-gray-500 text-xs">R.B. Grover</span>
-                        </li>
+            <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 px-4 py-6">
 
-                        <li>
-                            <p className="font-semibold">
-                                From the ‘Sincaraz’ takeover to the Sabalenka makeover
-                            </p>
-                            <span className="text-gray-500 text-xs">N. Sudarshan</span>
-                        </li>
+                {/* Left Column */}
+                <div className="lg:col-span-1 space-y-6">
+                    <div>
+                        <img
+                            src="https://images.unsplash.com/photo-1761839258289-72f12b0de058?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                            alt=""
+                            className="w-full"
+                        />
+                        <p className="text-red-600 text-sm font-semibold mt-2">WORLD</p>
+                        <h3 className="font-semibold">
+                            Former Pak PM Imran Khan sentenced in corruption case
+                        </h3>
+                    </div>
 
-                        <li>
-                            <p className="font-semibold">
-                                Polavaram displaced families look to tide over livelihood crisis
-                            </p>
-                            <span className="text-gray-500 text-xs">Kallol Bhattacharjee</span>
-                        </li>
-                    </ul>
-                </div>
-                <div className="lg:col-span-6">
-                    <span className="text-red-600 font-semibold text-sm">India</span>
-
-                    <h2 className="text-2xl font-bold leading-snug mt-2">
-                        Centre to review electoral roll revision process nationwide
-                    </h2>
-
-                    <p className="text-gray-600 mt-3 text-sm">
-                        The Election Commission is expected to examine complaints related to
-                        large-scale deletions and inclusions during recent verification drives.
-                    </p>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620"
-                        alt="news"
-                        className="w-full rounded-md mt-4"
-                    />
-
-                    <p className="text-gray-700 mt-4 text-sm leading-relaxed">
-                        Officials said the review would focus on transparency, grievance
-                        redressal, and ensuring that no eligible voter is excluded from the rolls.
-                    </p>
-                </div>
-                <div className="lg:col-span-3">
-                    <h3 className="text-red-600 font-semibold mb-4">Premium</h3>
-
-                    <div className="space-y-4 text-sm">
-                        <div>
-                            <p className="font-semibold">
-                                Why India’s nuclear future depends on policy clarity
-                            </p>
-                            <span className="text-gray-500 text-xs">R.B. Grover</span>
-                        </div>
-
-                        <div>
-                            <p className="font-semibold">
-                                The economics behind rising subscription journalism
-                            </p>
-                            <span className="text-gray-500 text-xs">Editorial</span>
-                        </div>
+                    <div>
+                        <img
+                            src="https://images.unsplash.com/photo-1761839258289-72f12b0de058?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                            alt=""
+                            className="w-full"
+                        />
+                        <p className="text-red-600 text-sm font-semibold mt-2">WORLD</p>
+                        <h3 className="font-semibold">
+                            Bangladesh violence: UN rights chief calls for peace
+                        </h3>
                     </div>
                 </div>
 
-            </div>
-        </section>
+                {/* Center Column */}
+                <div className="lg:col-span-2">
+                    <img
+                        src="https://images.unsplash.com/photo-1761839258289-72f12b0de058?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                        alt=""
+                        className="w-full"
+                    />
+                    <p className="text-red-600 text-sm font-semibold mt-3">INDIA</p>
+                    <h2 className="text-2xl font-bold leading-snug mt-1">
+                        Modi Government bulldozed MGNREGA, says Sonia Gandhi,
+                        vows fight against ‘black law’
+                    </h2>
+                    <p className="text-gray-600 mt-2">
+                        “By weakening MGNREGA, the Modi Government attacked the
+                        interests of millions of farmers and labourers,” she said.
+                    </p>
+                </div>
+
+                {/* Right Column */}
+                <div className="lg:col-span-1 space-y-6">
+                    <div>
+                        <p className="text-red-600 text-sm font-semibold">INDIA</p>
+                        <h4 className="font-semibold">
+                            People need freedom from mahajungle-raj in West Bengal: PM
+                        </h4>
+                    </div>
+
+                    <div>
+                        <p className="text-red-600 text-sm font-semibold">WORLD</p>
+                        <h4 className="font-semibold">
+                            U.S. says it struck Islamic State targets in Syria
+                        </h4>
+                    </div>
+
+                    <div>
+                        <p className="text-red-600 text-sm font-semibold">KERALA</p>
+                        <h4 className="font-semibold">
+                            Sreenivasan, renowned Malayalam actor, passes away
+                        </h4>
+                    </div>
+                    <div>
+                        <img
+                            src="https://images.unsplash.com/photo-1761839258289-72f12b0de058?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                            alt=""
+                            className="w-full"
+                        />
+                        <p className="text-red-600 text-sm font-semibold mt-2">WORLD</p>
+                        <h3 className="font-semibold">
+                            Bangladesh violence: UN rights chief calls for peace
+                        </h3>
+                    </div>
+                </div>
+            </main>
+        </div>
     );
 };
 
-export default Middle;
+export default Home;
