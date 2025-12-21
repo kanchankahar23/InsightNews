@@ -1,12 +1,12 @@
 import React from "react";
-
+import { ArrowRight } from 'lucide-react';
 const Home = () => {
     return (
         <div className="w-full bg-white">
 
-            <h1 className="text-4xl font-bold text-center mt-10 mb-8 text-red-600">The Top Headlines</h1>
+            <h1 className="text-4xl font-bold text-center mt-10 mb-8 text-red-700">The Top Headlines</h1>
             {/* Main Section */}
-            
+
 
             <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 px-4 py-6">
 
@@ -14,7 +14,7 @@ const Home = () => {
                 <div className="lg:col-span-1 space-y-6">
                     <div>
                         <img
-                            src="https://images.unsplash.com/photo-1761839258289-72f12b0de058?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202512/imran-khan--bushra-bibi--imran-khan-bushra-bibi--imran-khan-bushra-bibi-marriage--imran-khan-in-jail-244343734-16x9.png?VersionId=d2ITu5xNcvgwEUMyY2ZTn5oHJpH45O_c&size=690:388"
                             alt=""
                             className="w-full"
                         />
@@ -26,7 +26,7 @@ const Home = () => {
 
                     <div>
                         <img
-                            src="https://images.unsplash.com/photo-1761839258289-72f12b0de058?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                            src="https://th-i.thgim.com/public/incoming/9k2prg/article70417427.ece/alternates/LANDSCAPE_1200/2025-12-19T101652Z_858124792_RC2LJIAQ29HC_RTRMADP_3_BANGLADESH-POLITICS.JPG"
                             alt=""
                             className="w-full"
                         />
@@ -40,8 +40,7 @@ const Home = () => {
                 {/* Center Column */}
                 <div className="lg:col-span-2">
                     <img
-                        src="https://images.unsplash.com/photo-1761839258289-72f12b0de058?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
-                        alt=""
+                        src="https://th-i.thgim.com/public/incoming/5abg43/article70419448.ece/alternates/LANDSCAPE_1200/PTI12_20_2025_000167B.jpg"
                         className="w-full"
                     />
                     <p className="text-red-600 text-sm font-semibold mt-3">INDIA</p>
@@ -79,8 +78,9 @@ const Home = () => {
                     </div>
                     <div>
                         <img
-                            src="https://images.unsplash.com/photo-1761839258289-72f12b0de058?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                            src="https://th-i.thgim.com/public/incoming/9k2prg/article70417427.ece/alternates/LANDSCAPE_1200/2025-12-19T101652Z_858124792_RC2LJIAQ29HC_RTRMADP_3_BANGLADESH-POLITICS.JPG"
                             alt=""
+
                             className="w-full"
                         />
                         <p className="text-red-600 text-sm font-semibold mt-2">WORLD</p>
@@ -90,7 +90,12 @@ const Home = () => {
                     </div>
                 </div>
             </main>
+            <div className="w-full flex justify-center items-center">
+                <button className="px-6 py-3 flex gap-1 border mt-8 mb-8 text-center bg-red-600 text-white hover:bg-white hover:text-red-500 hover:border-red-400 rounded-md font-bold">View to More News <ArrowRight /></button>
+            </div>
+
         </div>
+
     );
 };
 
