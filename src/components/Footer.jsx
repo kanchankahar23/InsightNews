@@ -4,8 +4,6 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 text-gray-800 border-t">
       <div className="max-w-7xl mx-auto px-6 py-12">
-
-        {/* Logo & App Buttons */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10">
           <h1 className="text-3xl font-serif font-bold">INSIGHT NEWS</h1>
 
@@ -22,11 +20,8 @@ const Footer = () => {
             />
           </div>
         </div>
-
-        {/* Footer Links */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-sm">
 
-          {/* Column 1 */}
           <div>
             <h3 className="font-semibold border-b pb-2 mb-3">Insight News</h3>
             <ul className="space-y-2">
@@ -38,8 +33,6 @@ const Footer = () => {
               <li>RSS Feeds</li>
             </ul>
           </div>
-
-          {/* Column 2 */}
           <div>
             <h3 className="font-semibold border-b pb-2 mb-3">Other Products</h3>
             <ul className="space-y-2">
@@ -50,7 +43,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3 */}
           <div>
             <h3 className="font-semibold border-b pb-2 mb-3">Business</h3>
             <ul className="space-y-2">
@@ -61,7 +53,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4 */}
           <div>
             <h3 className="font-semibold border-b pb-2 mb-3">Sports</h3>
             <ul className="space-y-2">
@@ -72,7 +63,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 5 */}
           <div>
             <h3 className="font-semibold border-b pb-2 mb-3">Cities</h3>
             <ul className="space-y-2">
@@ -84,7 +74,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 6 */}
           <div>
             <h3 className="font-semibold border-b pb-2 mb-3">Trending</h3>
             <ul className="space-y-2">
@@ -104,7 +93,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom */}
         <div className="border-t mt-10 pt-6 text-center text-sm text-gray-500">
           © 2025 Insight News. All Rights Reserved.
         </div>
