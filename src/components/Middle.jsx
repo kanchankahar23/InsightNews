@@ -5,12 +5,7 @@ const Home = () => {
         <div className="w-full bg-white">
 
             <h1 className="text-4xl font-bold text-center mt-10 mb-8 text-red-700">The Top Headlines</h1>
-            {/* Main Section */}
-
-
             <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 px-4 py-6">
-
-                {/* Left Column */}
                 <div className="lg:col-span-1 space-y-6">
                     <div>
                         <img
@@ -36,8 +31,6 @@ const Home = () => {
                         </h3>
                     </div>
                 </div>
-
-                {/* Center Column */}
                 <div className="lg:col-span-2">
                     <img
                         src="https://th-i.thgim.com/public/incoming/5abg43/article70419448.ece/alternates/LANDSCAPE_1200/PTI12_20_2025_000167B.jpg"
@@ -53,8 +46,6 @@ const Home = () => {
                         interests of millions of farmers and labourers,” she said.
                     </p>
                 </div>
-
-                {/* Right Column */}
                 <div className="lg:col-span-1 space-y-6">
                     <div>
                         <p className="text-red-600 text-sm font-semibold">INDIA</p>
