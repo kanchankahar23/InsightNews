@@ -49,3 +49,145 @@ This project is ideal for:
 ```markdown
 ![Homepage](./assets/home.png)
 ![Mobile View](./assets/mobile.png)
+📂 Project Structure
+InsightNews/
+├── public/
+├── src/
+│   ├── assets/          # Images & icons
+│   ├── components/      # Reusable components
+│   ├── pages/           # Page components
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
+
+
+⚙️ Installation & Setup
+Follow these steps to run the project locally:
+1️⃣ Clone the repository
+git clone https://github.com/kanchankahar23/InsightNews.git
+cd InsightNews
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Add Environment Variables
+Create a .env file in the root directory:
+VITE_NEWS_API_KEY=your_api_key_here
+
+4️⃣ Start the development server
+npm run dev
+
+Open your browser and visit:
+http://localhost:5173
+
+
+🧪 Usage
+
+
+Browse top headlines on the homepage
+
+
+Use the search bar to find specific news
+
+
+Select categories to filter articles
+
+
+Read summaries and follow links for full news
+
+
+
+🌐 Live Demo
+
+(Add your deployed link when available)
+
+🔗 Live Site: Coming Soon
+
+🤝 Contributing
+Contributions are welcome!
+Steps to contribute:
+
+
+Fork the repository
+
+
+Create a new branch
+git checkout -b feature/your-feature
+
+
+Commit your changes
+git commit -m "Added new feature"
+
+
+Push to your branch
+git push origin feature/your-feature
+
+
+Open a Pull Request
+
+
+
+📄 License
+This project is licensed under the MIT License.
+
+👤 Author
+Kanchan Kahar
+
+
+GitHub: https://github.com/kanchankahar23
+
+
+MCA Student | Web Development Learner
+
+
+
+⭐ Support
+If you like this project:
+
+
+⭐ Star the repository
+
+
+🍴 Fork it
+
+
+🧑‍💻 Use it for learning and practice
+
+
+
+🙏 Acknowledgements
+
+
+React Community
+
+
+Vite
+
+
+News API Providers
+
+
+Open-source contributors
+
+
+
+Happy Coding! 🚀
+
+---
+
+### 🔥 Next improvement (Recommended for you)
+- Add **badges** (stars, forks, license)
+- Add **live demo link**
+- Add **GIF demo**
+- Create `CONTRIBUTING.md`
+
+If you want, I can:
+✅ Add **badges**  
+✅ Improve **English wording**  
+✅ Make it **more professional for placement**  
+✅ Write **project explanation for interview**
+
+You are doing really well, Kanchan 💪 Keep going!
+
