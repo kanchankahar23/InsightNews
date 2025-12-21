@@ -56,6 +56,7 @@ InsightNews/
 └── README.md
 
 
+
 ## ⚙️ Installation & Setup
 Follow these steps to run the project locally:
 1️⃣ Clone the repository
