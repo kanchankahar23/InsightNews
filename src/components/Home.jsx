@@ -35,8 +35,6 @@ const Home = () => {
 
   
       <div className="hidden md:block w-px bg-gray-300"></div>
-
-      {/* Main News */}
       <div className="w-full md:w-3/5">
         <h1 className="text-red-600 font-bold mb-1">Tamil Nadu</h1>
 
@@ -50,11 +48,7 @@ const Home = () => {
 
         <img src={image} alt="News" className="w-full rounded-lg" />
       </div>
-
-      {/* Divider */}
       <div className="hidden md:block w-px bg-gray-300"></div>
-
-      {/* Latest News */}
       <div className="hidden md:flex flex-col w-1/5">
         <h1 className="text-red-600 font-bold mb-3">Latest News</h1>
 
