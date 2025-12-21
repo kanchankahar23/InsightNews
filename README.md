@@ -42,14 +42,7 @@ This project is ideal for:
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots inside an `assets/` folder and update paths below
-
-```markdown
-![Homepage](./assets/home.png)
-![Mobile View](./assets/mobile.png)
-📂 Project Structure
+## 📂 Project Structure
 InsightNews/
 ├── public/
 ├── src/
@@ -63,7 +56,7 @@ InsightNews/
 └── README.md
 
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 Follow these steps to run the project locally:
 1️⃣ Clone the repository
 git clone https://github.com/kanchankahar23/InsightNews.git
@@ -83,7 +76,7 @@ Open your browser and visit:
 http://localhost:5173
 
 
-🧪 Usage
+## 🧪 Usage
 
 
 Browse top headlines on the homepage
@@ -99,13 +92,13 @@ Read summaries and follow links for full news
 
 
 
-🌐 Live Demo
+## 🌐 Live Demo
 
 (Add your deployed link when available)
 
 🔗 Live Site: Coming Soon
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome!
 Steps to contribute:
 
@@ -129,7 +122,7 @@ Open a Pull Request
 
 
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 
 👤 Author
@@ -139,55 +132,4 @@ Kanchan Kahar
 GitHub: https://github.com/kanchankahar23
 
 
-MCA Student | Web Development Learner
-
-
-
-⭐ Support
-If you like this project:
-
-
-⭐ Star the repository
-
-
-🍴 Fork it
-
-
-🧑‍💻 Use it for learning and practice
-
-
-
-🙏 Acknowledgements
-
-
-React Community
-
-
-Vite
-
-
-News API Providers
-
-
-Open-source contributors
-
-
-
-Happy Coding! 🚀
-
----
-
-### 🔥 Next improvement (Recommended for you)
-- Add **badges** (stars, forks, license)
-- Add **live demo link**
-- Add **GIF demo**
-- Create `CONTRIBUTING.md`
-
-If you want, I can:
-✅ Add **badges**  
-✅ Improve **English wording**  
-✅ Make it **more professional for placement**  
-✅ Write **project explanation for interview**
-
-You are doing really well, Kanchan 💪 Keep going!
 
