@@ -22,8 +22,6 @@ const Home = () => {
 
   return (
     <div className="flex justify-between mt-6 gap-8 px-5">
-
-      {/* Premium */}
       <div className="hidden md:flex flex-col w-1/5">
         <h1 className="text-red-600 font-bold mb-3">Premium</h1>
 
@@ -35,7 +33,7 @@ const Home = () => {
         ))}
       </div>
 
-      {/* Divider */}
+  
       <div className="hidden md:block w-px bg-gray-300"></div>
 
       {/* Main News */}
