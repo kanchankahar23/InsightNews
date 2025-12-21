@@ -1,6 +1,8 @@
 import React from "react";
 import { ArrowRight } from 'lucide-react';
-const Home = () => {
+import { useNavigate } from "react-router-dom";
+const Middle = () => {
+    const navigate = useNavigate()
     return (
         <div className="w-full bg-white">
 
@@ -82,7 +84,7 @@ const Home = () => {
                 </div>
             </main>
             <div className="w-full flex justify-center items-center">
-                <button className="px-6 py-3 flex gap-1 border mt-8 mb-8 text-center bg-red-600 text-white hover:bg-white hover:text-red-500 hover:border-red-400 rounded-md font-bold">View to More News <ArrowRight /></button>
+                <button onClick={()=>navigate('/news')} className="px-6 py-3 flex gap-1 border mt-8 mb-8 text-center bg-red-600 text-white hover:bg-white hover:text-red-500 hover:border-red-400 rounded-md font-bold">View to More News <ArrowRight /></button>
             </div>
 
         </div>
@@ -90,4 +92,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Middle;

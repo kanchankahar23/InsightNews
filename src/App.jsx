@@ -1,16 +1,19 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Middle from './components/Middle'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { Route } from 'lucide-react'
+import Home from './pages/Home'
 
+import ShowNews from "./pages/ShowNews";
 const App = () => {
   return (
     <>
-     <Navbar/>
-     <Home/>
-     <Middle/>
-     <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/news" element={<ShowNews />} />
+        </Routes>
+      </BrowserRouter>
+
+
     </>
   )
 }

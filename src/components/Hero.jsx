@@ -1,7 +1,7 @@
 import React from 'react'
 import image from '../assets/image.png'
 
-const Home = () => {
+const Hero = () => {
 
   const Premium = [
     { heading: "A bold step amid an ambitious nuclear energy target", name: "R.B. Grover" },
@@ -64,4 +64,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hero

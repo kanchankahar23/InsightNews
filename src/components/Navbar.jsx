@@ -5,7 +5,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full sticky border-b">
+    <header className="w-full sticky top-0 bg-white border-b">
       <div className="flex items-center justify-between px-4 py-1">
         <div className="hidden md:flex gap-4  text-sm text-gray-700">
           <span className="font-bold">Dec 19, 2025</span>
