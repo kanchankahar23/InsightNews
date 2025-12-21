@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/Logo.png";
 
-const Navbar = () => {
+const Navbar = ({setCategory}) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -52,6 +52,7 @@ const Navbar = () => {
         ].map((item) => (
           <a
             key={item}
+            onClick={()=>setCategory({item})}
             href="#"
             className="block py-2 md:py-3 text-center text-lg font-semibold hover:text-red-600"
           >
