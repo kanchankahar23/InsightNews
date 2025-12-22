@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Category = ({ news }) => {
+  const navigate = useNavigate()
   return (
     <div>
       <div className="max-w-7xl mx-auto px-4 py-10">
@@ -12,13 +14,19 @@ const Category = ({ news }) => {
           {news.map((item, index) => (
             <div
               key={index}
+              onClick={() => navigate(`/news/${index}`, { state: item })}
               className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden"
             >
               <img
-                src={item.urlToImage || "https://via.placeholder.com/400"}
-                alt={item.title}
+                src={item.urlToImage || "https://imgs.search.brave.com/kp_nagqx8m4kFH7Rmx76E3nI-9rl0XxOXsEAUah4Vqo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE5/NTM1NTI3NS9waG90/by9icmVha2luZy1u/ZXdzLW1hbGUtYW5j/aG9yLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1DeTV5WjU4/TlUyelpoeVc5ejVB/RkZYd0p5THdqeUw2/OUtyeGsyWnVwSmxV/PQ"}
+                alt={item.title || "News image"}
                 className="w-full h-44 object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "https://imgs.search.brave.com/kp_nagqx8m4kFH7Rmx76E3nI-9rl0XxOXsEAUah4Vqo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE5/NTM1NTI3NS9waG90/by9icmVha2luZy1u/ZXdzLW1hbGUtYW5j/aG9yLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1DeTV5WjU4/TlUyelpoeVc5ejVB/RkZYd0p5THdqeUw2/OUtyeGsyWnVwSmxV/PQ";
+                }}
               />
+
               <div className="p-4">
                 <span className="text-xs text-red-600 font-semibold">
                   INSIGHT NEWS

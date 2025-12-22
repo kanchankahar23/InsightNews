@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import logo from "../assets/Logo.png";
+import { Bell } from "lucide-react";
 
 const Navbar = ({ setCategoryitem }) => {
   const [open, setOpen] = useState(false);
+  const [subscribed, setSubscribed] = useState(false); // state to show bell
 
   const categories = [
     "business",
@@ -11,18 +13,25 @@ const Navbar = ({ setCategoryitem }) => {
     "health",
     "science",
     "sports",
-    "technology"
-
+    "technology",
   ];
+
+  const handleSubscribe = () => {
+    setSubscribed(true); // show bell when clicked
+  };
 
   return (
     <header className="w-full sticky top-0 bg-white border-b z-50">
       <div className="flex items-center justify-between px-4 py-1">
         <div className="hidden md:flex gap-4 text-sm text-gray-700">
-          <span className="font-bold">Dec 19, 2025</span>
-          <span className="text-red-600 font-bold cursor-pointer">
-            e-Paper
+          <span className="font-bold">
+            {new Date().toLocaleDateString("en-US", {
+              month: "short",
+              day: "numeric",
+              year: "numeric",
+            })}
           </span>
+          <span className="text-red-600 font-bold cursor-pointer">e-Paper</span>
         </div>
 
         <div className="flex-1 flex justify-center">
@@ -34,18 +43,17 @@ const Navbar = ({ setCategoryitem }) => {
         </div>
 
         <div className="hidden md:flex gap-6 items-center text-sm">
-          <span className="cursor-pointer font-bold text-gray-700 hover:border-b-2 border-red-700">
-            LOGIN
-          </span>
-          <button className="bg-red-600 hover:bg-transparent hover:text-red-600 border hover:border-red-500 transition duration-300 font-bold text-white px-4 py-1 rounded">
+
+          <button
+            onClick={handleSubscribe}
+            className="bg-red-600 hover:bg-transparent hover:text-red-600 border hover:border-red-500 transition duration-300 font-bold text-white px-4 py-1 rounded flex items-center gap-2"
+          >
             SUBSCRIBE
+            {subscribed && <Bell />}
           </button>
         </div>
 
-        <button
-          className="md:hidden text-2xl"
-          onClick={() => setOpen(!open)}
-        >
+        <button className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
           ☰
         </button>
       </div>
@@ -58,7 +66,6 @@ const Navbar = ({ setCategoryitem }) => {
           <button
             key={item}
             onClick={() => {
-              console.log(item)
               setCategoryitem(item);
               setOpen(false);
             }}

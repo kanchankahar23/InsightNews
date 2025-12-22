@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Category from './Category'
+import Footer from '../components/Footer'
+import NewsDetail from './NewsDetail'
 
 const Shownews = () => {
 
@@ -23,7 +25,7 @@ const Shownews = () => {
         console.log(err)
         setLoading(false)
       })
-  }, [categoryitem])   // ✅ VERY IMPORTANT
+  }, [categoryitem]) 
 
   return (
     <>
@@ -31,8 +33,11 @@ const Shownews = () => {
       <Category
         news={news}
         categoryitem={categoryitem}
-        loading={loading}
       />
+      <NewsDetail/>
+      <Footer/>
+      
+
     </>
   )
 }
