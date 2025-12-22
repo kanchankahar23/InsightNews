@@ -4,6 +4,7 @@ import Home from './pages/Home'
 
 import ShowNews from "./pages/ShowNews";
 const App = () => {
+  
   return (
     <>
       <BrowserRouter>

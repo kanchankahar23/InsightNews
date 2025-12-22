@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Category from './Category'
 
-const Shownews = ({category}) => {
+const Shownews = () => {
 
   const [news, setNews] = useState([])
 
-  const api = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=30cefa94e9f44bfca529801ac57cd45e`
+  const api = `https://newsapi.org/v2/top-headlines?country=us&apiKey=30cefa94e9f44bfca529801ac57cd45e`
 
   useEffect(() => {
     fetch(api)
