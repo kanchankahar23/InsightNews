@@ -4,7 +4,7 @@ import { Bell } from "lucide-react";
 
 const Navbar = ({ setCategoryitem }) => {
   const [open, setOpen] = useState(false);
-  const [subscribed, setSubscribed] = useState(false); // state to show bell
+  const [subscribed, setSubscribed] = useState(false);
 
   const categories = [
     "business",
@@ -17,7 +17,7 @@ const Navbar = ({ setCategoryitem }) => {
   ];
 
   const handleSubscribe = () => {
-    setSubscribed(true); // show bell when clicked
+    setSubscribed(true); 
   };
 
   return (
