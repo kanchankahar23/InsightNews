@@ -10,6 +10,7 @@ const Shownews = () => {
   const [categoryitem, setCategoryitem] = useState("general")
   const [loading, setLoading] = useState(false)
 
+  // const api = `https://newsapi.org/v2/top-headlines?country=us&category=${categoryitem}&apiKey=30cefa94e9f44bfca529801ac57cd45e}`
   const api = `https://newsapi.org/v2/top-headlines?country=us&category=${categoryitem}&apiKey=30cefa94e9f44bfca529801ac57cd45e`
 
   useEffect(() => {
